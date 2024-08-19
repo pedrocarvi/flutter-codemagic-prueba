@@ -17,11 +17,11 @@ class MyApp extends StatelessWidget {
       home: Column(
         children: [
           const Center(
-              child: Text("CI/CD",
+              child: Text("CI/CD Prueba",
                   style: TextStyle(color: Colors.black, fontSize: 20.00))),
           Center(
             child: ElevatedButton(
-                onPressed: () => {print("Hola")}, child: const Text('Boton nuevo')),
+                onPressed: () => {print("Hola")}, child: const Text('Boton nuevo :)')),
           )
         ],
       ),
