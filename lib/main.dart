@@ -14,7 +14,17 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const Center(child: Text("CI/CD", style: TextStyle(color: Colors.black, fontSize: 20.00))),
+      home: Column(
+        children: [
+          const Center(
+              child: Text("CI/CD",
+                  style: TextStyle(color: Colors.black, fontSize: 20.00))),
+          Center(
+            child: ElevatedButton(
+                onPressed: () => {print("Hola")}, child: const Text('Boton nuevo')),
+          )
+        ],
+      ),
     );
   }
 }
